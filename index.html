@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Welcome to my survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fun Fact Survey:</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="personname">Write your name here:</label>
+            <input id="personname" class="form-control" type="text">
+          </div>
+
+            <label for="beverage">What is your favorite beverage?</label>
+          <select class="form-control" id="beverage">
+            <option>Coffee</option>
+            <option>Tea</option>
+            <option>Kombucha</option>
+            <option>Water</option>
+          </select>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="Rock" checked>
+              Rock
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="Pop">
+              Pop
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="Country">
+              Country
+            </label>
+          </div>
+
+
+          <div class="form-group">
+            <label for="color">What is your favorite color?</label>
+            <input id="color" class="form-control" type="color">
+          </div>
+
+
+
+          <div id="bookinginfo">
+
+
+          <button type="submit" class="btn">Submit your survey!</button>
+        </form>
+        <h2>Survey Results</h2>
+        <p>Name:</p><span class="personname"></span>
+        <p>Favorite Beverage:</p><span class="beverage"></span>
+        <p>Favorite Music:</p><span class="music"></span>
+        <p>Favorite Color:</p><span class="color"></span>
+
+      </div>
+    </div>
+  </body>
+</html>
